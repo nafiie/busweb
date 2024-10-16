@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+     <body class="bg-gray-100 font-sans flex flex-col justify-between ">       
+        <!-- navigation bar -->
+         <nav class="bg-white shadow-lg">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between"> 
+                    <!-- logo -->
+                     <div>
+                        <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                            <span>👜</span>
+                            <span class="font-bold text-xl">Bunmi's Hub</span>
+                        </a>
+                     </div>
+
+                     <!-- links -->
+                     <div id="mobile-menu" class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+                        <a href="about.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
+                        <a href="service.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Service</a>
+                        <a href="contact.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact</a>
+                        </div>
+
+                      <div class="hidden md:flex items-center space-x-1">
+                        <a href="signin.html" class="py-3 px-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-100">Sign in</a>
+                        <a href="signup.html" class="py-5 px-3 rounded rounded-md bg-blue-500 text-white hover:bg-blue-400">Sign up</a>
+                      </div>
+
+                      <!-- mobile button -->
+                       <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-button"  class="md:hidden focus:outline-none">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </button>
+                       </div>
+                      <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
+                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Services</a>
+                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact</a>
+                       </div>
+                </div>
+                
+            </div>
+
+         </nav>
+                     
+        <section class="bg-gray-100 py-16">
+            <div class="max-w-2xl mx-auto p-12 bg-white rounded-lg shadow-lg">
+                <h2 class="text-lg font-bold text-center mb-8 text-blue-500">Sign up</h2>
+                <form class="space-y-6">
+                <div>
+                    <label for="firt name" class="block text-sm font-md text-gray-700">First name</label>
+                    <input type="text" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="last name" class="block text-sm font-md text-gray-700">Last name</label>
+                    <input type="text" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label  class="block text-sm font-md text-gray-700">Gender <svg height="10px" width="10px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#bfbbbb" stroke="#bfbbbb" stroke-width="0.00512"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M256,0C114.616,0,0,114.612,0,256s114.616,256,256,256s256-114.612,256-256S397.385,0,256,0z M207.678,378.794 c0-17.612,14.281-31.893,31.893-31.893c17.599,0,31.88,14.281,31.88,31.893c0,17.595-14.281,31.884-31.88,31.884 C221.959,410.678,207.678,396.389,207.678,378.794z M343.625,218.852c-3.596,9.793-8.802,18.289-14.695,25.356 c-11.847,14.148-25.888,22.718-37.442,29.041c-7.719,4.174-14.533,7.389-18.769,9.769c-2.905,1.604-4.479,2.95-5.256,3.826 c-0.768,0.926-1.029,1.306-1.496,2.826c-0.273,1.009-0.558,2.612-0.558,5.091c0,6.868,0,12.512,0,12.512 c0,6.472-5.248,11.728-11.723,11.728h-28.252c-6.475,0-11.732-5.256-11.732-11.728c0,0,0-5.645,0-12.512 c0-6.438,0.752-12.744,2.405-18.777c1.636-6.008,4.215-11.718,7.508-16.694c6.599-10.083,15.542-16.802,23.984-21.48 c7.401-4.074,14.723-7.455,21.516-11.281c6.789-3.793,12.843-7.91,17.302-12.372c2.988-2.975,5.31-6.05,7.087-9.52 c2.335-4.628,3.955-10.067,3.992-18.389c0.012-2.463-0.698-5.702-2.632-9.405c-1.926-3.686-5.066-7.694-9.264-11.29 c-8.45-7.248-20.843-12.545-35.054-12.521c-16.285,0.058-27.186,3.876-35.587,8.62c-8.36,4.776-11.029,9.595-11.029,9.595 c-4.268,3.718-10.603,3.85-15.025,0.314l-21.71-17.397c-2.719-2.173-4.322-5.438-4.396-8.926c-0.063-3.479,1.425-6.81,4.061-9.099 c0,0,6.765-10.43,22.451-19.38c15.62-8.992,36.322-15.488,61.236-15.429c20.215,0,38.839,5.562,54.268,14.661 c15.434,9.148,27.897,21.744,35.851,36.876c5.281,10.074,8.525,21.43,8.533,33.38C349.211,198.042,347.248,209.058,343.625,218.852 z"></path> </g> </g></svg></label>
+                        <label>Female</label>
+                        <input type="radio"  placeholder="female">
+                        <label>Male</label>
+                        <input type="radio" placeholder="male">
+                        <label>Custom</label>
+                        <input type="radio" placeholder="Custom">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-md text-gray-700">Email</label>
+                    <input type="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-md text-gray-700">Password</label>
+                    <input type="password" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                </div>
+
+                <div class="text-gray-900 font-semibold">
+                    <p>Already have an account?  <a href="signin.html" class="text-green-500">Sign in</a></p>
+                </div>
+
+        
+                
+                <div class="text-centre">
+                    <button class="md:w-auto bg-blue-500 items-center border-blue-500 rounded-md text-white px-6 py-2 font-sm hover:bg-blue-400 focus:outline-none focus:ring-blue-500">Register</button>
+                </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer section -->
+      <footer class="bg-white shadow-lg text-gray-800 py-12 bottom-0 left-0 w-full">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+          <p class="mb-4 text-lg">&copy; 2024 Bunmi's hub. All rights reserved.</p>
+          <div class="flex justify-center space-x-4">
+            <a href="#" class="hover:text-gray-600 text-lg">Privacy policy</a>
+            <a href="#" class="hover:text-gray-600 text-lg">Terms of service</a>
+            <a href="#" class="hover:text-gray-600 text-lg">Contact us</a>                        
+               </div>
+           </div>
+        </footer>
+
+        
+            
+
+      </body>
+</html>

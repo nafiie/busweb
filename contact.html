@@ -29,8 +29,8 @@
                       </div>
 
                       <div class="hidden md:flex items-center space-x-1">
-                        <a href="" class="py-3 px-2 bg-blue-500 text-white rounded hover:bg-blue-400">Sign in</a>
-                        <a href="" class="py-3 px-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-100">Sign up</a>
+                        <a href="signin.html" class="py-3 px-2 bg-blue-500 text-white rounded hover:bg-blue-400">Sign in</a>
+                        <a href="signup.html" class="py-3 px-2 border border-blue-500 text-blue-500 rounded hover:bg-blue-100">Sign up</a>
                       </div>
 
                       <!-- mobile button -->
@@ -52,7 +52,7 @@
          </nav>
 
          <section class="bg-gray-100 py-16">
-            <div class="max-w-2xl mx-auto px-4">
+            <div class="max-w-2xl mx-auto p-12 bg-white rounded-lg shadow-lg">
              <h2 class="text-3xl font-bold text-center mb-8">Contact us</h2>
              <form class="space-y-6">
                 <div>
@@ -77,7 +77,7 @@
          </section>
 
         <section class="bg-gray-100 py-16">
-            <div class="max-w-2xl mx-auto px-4 md:flex md:space-x-8">
+            <div class="max-w-2xl mx-auto px-4 md:flex md:space-x-8 p-10 bg-white rounded-lg shadow-lg">
               <div class="w-full md:w-1/2 mb-8 md:mb-0">
                 <h2 class="text-2xl font-bold  mb-4">Contact us</h2>
                 <iframe class="w-full h-64 rounded-md shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63457.866144044296!2d6.141044820295871!3d6.248358271267576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10414e56ba75d509%3A0xfb109346984ce351!2sAgbor%2C%20Delta!5e0!3m2!1sen!2sng!4v1728681338062!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -105,8 +105,18 @@
             </div>
          </footer>
 
+         <script>
 
+            let menuBtn = document.getElementById("mobile-menu-button")
+            let mobileMenu = document.getElementById("mobile-menu")
 
+            menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden') 
+
+            })
+
+         </script>
+        
 
         
     </body>
